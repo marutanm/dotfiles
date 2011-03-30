@@ -10,3 +10,6 @@
 [submodule "bundle/newspaper.vim"]
 	path = bundle/newspaper.vim
 	url = git://github.com/vim-scripts/newspaper.vim.git
+[submodule "bundle/git-vim"]
+	path = bundle/git-vim
+	url = git://github.com/motemen/git-vim.git
