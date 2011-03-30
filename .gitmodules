@@ -4,3 +4,9 @@
 [submodule "bundle/gist-vim"]
 	path = bundle/gist-vim
 	url = git://github.com/mattn/gist-vim.git
+[submodule "bundle/wombat256.vim"]
+	path = bundle/wombat256.vim
+	url = git://github.com/vim-scripts/wombat256.vim.git
+[submodule "bundle/newspaper.vim"]
+	path = bundle/newspaper.vim
+	url = git://github.com/vim-scripts/newspaper.vim.git
