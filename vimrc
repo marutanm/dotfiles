@@ -10,18 +10,17 @@ filetype off                   " required!
 set rtp+=~/.vim/vundle/ 
 call vundle#rc()
 
-Bundle 'mattn/gist-vim'
-Bundle 'vim-scripts/wombat256.vim'
-Bundle 'vim-scripts/newspaper.vim'
-Bundle 'motemen/git-vim'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'msanders/snipmate.vim'
-Bundle 'tpope/vim-surround'
-Bundle 'msanders/cocoa.vim'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'Shougo/neocomplcache'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'motemen/git-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'msanders/cocoa.vim'
+Bundle 'msanders/snipmate.vim'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-haml'
-Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-surround'
+Bundle 'newspaper.vim'
+Bundle 'wombat256.vim'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
