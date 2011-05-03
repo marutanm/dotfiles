@@ -7,9 +7,10 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/vundle/ 
+set rtp+=~/.vim/bundle/vundle/ 
 call vundle#rc()
 
+Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'motemen/git-vim'
