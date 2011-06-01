@@ -22,6 +22,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
 Bundle 'newspaper.vim'
 Bundle 'wombat256.vim'
+Bundle 'mrtazz/molokai.vim'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
