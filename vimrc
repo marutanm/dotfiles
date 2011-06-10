@@ -40,8 +40,8 @@ set nolist          "改行記号等を表示しない
 "set list
 set autoindent
 set showmatch       "閉じ括弧が入力されたとき、対応する開き括弧にわずかの間ジャンプする
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set ruler
 "set rulerformat=%20(%l,%c\ %P%)%=%{strftime('%k:%M')}
