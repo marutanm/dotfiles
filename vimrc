@@ -90,6 +90,7 @@ noremap gk  k
 "colorscheme torte
 "colorscheme wombat
 "colorscheme newspaper
+colorscheme molokai
 
 " <Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
