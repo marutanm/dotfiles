@@ -13,7 +13,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
-Bundle 'fholgado/minibufexpl.vim'
 Bundle 'mattn/gist-vim'
 Bundle 'msanders/cocoa.vim'
 Bundle 'msanders/snipmate.vim'
@@ -101,13 +100,6 @@ noremap <Leader><Leader> :up<CR>
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
-
-" minibufexpl.vimrc
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplMapCTabSwitchBuffs = 1
-nnoremap <C-n> :<C-u>bn<Enter>
-nnoremap <C-p> :<C-u>bp<Enter>
 
 " Gist.vimrc
 source ~/.vimrc.gist
