@@ -13,6 +13,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
+Bundle 'tsukkee/unite-help'
 Bundle 'mattn/gist-vim'
 Bundle 'msanders/cocoa.vim'
 Bundle 'msanders/snipmate.vim'
@@ -77,12 +78,6 @@ nnoremap <Space>.  :<C-u>edit $MYVIMRC<Enter>
 " vimrcを即座にリロードできるようにする
 nnoremap <Space>s.  :<C-u>source $MYVIMRC<Enter>
 
-" <C-h>の1キーで:helpを引く準備ができるようにする。
-nnoremap <C-h>  :<C-u>help<Space>
-
-" <C-h><C-h>でカーソル下のキーワードを:helpで引く。
-nnoremap <C-h><C-h>  :<C-u>help<Space><C-r><C-w><Enter>
-
 " ;と:の意味を入れ替える。文字として入力する場合はそのまま。
 noremap ;  :
 noremap :  ;
@@ -129,6 +124,12 @@ au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('split
 " ウィンドウを縦に分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
 au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+
+" unite-help
+" Execute help.
+nnoremap <C-h>  :<C-u>Unite -start-insert help<CR>
+" Execute help by cursor keyword.
+nnoremap <C-h><C-h>  :<C-u>UniteWithCursorWord help<CR>
 
 " ref.vim
 " /usr/local/bin/refe
