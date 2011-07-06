@@ -47,7 +47,12 @@ set expandtab
 set ruler
 "set rulerformat=%20(%l,%c\ %P%)%=%{strftime('%k:%M')}
 set laststatus=2
-set statusline=%t\ %m%r%h%w[%Y][%{&fenc}]%=%c,%l\ %P\ %{strftime('%k:%M')}
+set statusline=
+set statusline+=%t\ %m%r%h%w
+set statusline+=[%Y][%{&fenc}]
+set statusline+=%{fugitive#statusline()}
+set statusline+=%=
+set statusline+=%<%c,%l\ %P\ %{strftime('%k:%M')}
 "set lines=50
 "set columns=150
 set cursorline
