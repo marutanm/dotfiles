@@ -12,6 +12,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/unite.vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'mattn/gist-vim'
 Bundle 'msanders/cocoa.vim'
@@ -33,7 +34,7 @@ filetype plugin indent on
 " ファイルの種類に応じたシンタックスハイライトを有効にする。
 syntax enable
 
-"set imdisable
+set imdisable
 set showcmd			"コマンドをステータスラインに表示
 set number			"行番号を表示する
 set nolist          "改行記号等を表示しない
@@ -118,3 +119,14 @@ vnoremap <silent> <d-/> <ESC>:call NERDComment(1, "toggle")<cr>
 
 "let g:filetype_m = 'objc'
 
+" unite.vim
+"入力モードで開始する
+let g:unite_enable_start_insert=1
+nnoremap <Space>u :<C-u>Unite file buffer file_mru<CR>
+nnoremap <Space>ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
+"ウィンドウを分割して開く
+au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
+au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
+" ウィンドウを縦に分割して開く
+au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
