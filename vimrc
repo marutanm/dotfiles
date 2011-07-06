@@ -23,6 +23,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'newspaper.vim'
 Bundle 'wombat256.vim'
 Bundle 'mrtazz/molokai.vim'
+Bundle 'ref.vim'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -122,3 +123,6 @@ au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('split
 " ウィンドウを縦に分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
 au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+
+" ref.vim
+" /usr/local/bin/refe
