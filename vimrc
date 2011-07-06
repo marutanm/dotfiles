@@ -49,6 +49,8 @@ set laststatus=2
 set statusline=%t\ %m%r%h%w[%Y][%{&fenc}]%=%c,%l\ %P\ %{strftime('%k:%M')}
 "set lines=50
 "set columns=150
+set cursorline
+"set cursorcolumn
 
 "行の連結 "J" で、間にスペースを入れない
 set nojoinspaces
