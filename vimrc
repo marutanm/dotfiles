@@ -100,6 +100,9 @@ colorscheme molokai
 " <Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
 
+" molokai.vim
+let g:molokai_original = 1
+
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
