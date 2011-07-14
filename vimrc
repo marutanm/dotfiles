@@ -27,6 +27,7 @@ Bundle 'newspaper.vim'
 Bundle 'wombat256.vim'
 Bundle 'mrtazz/molokai.vim'
 Bundle 'ref.vim'
+Bundle 'kchmck/vim-coffee-script'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
