@@ -102,6 +102,10 @@ colorscheme molokai
 " <Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
 
+" Indent on visual mode
+vnoremap < <gv
+vnoremap > >gv
+
 " molokai.vim
 let g:molokai_original = 1
 
