@@ -27,6 +27,7 @@ Bundle 'wombat256.vim'
 Bundle 'mrtazz/molokai.vim'
 Bundle 'ref.vim'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'buftabs'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -136,3 +137,6 @@ nnoremap <C-h><C-h>  :<C-u>UniteWithCursorWord help<CR>
 
 " ref.vim
 " /usr/local/bin/refe
+
+" buftabs.vim
+let g:buftabs_only_basename=1
