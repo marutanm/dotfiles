@@ -18,7 +18,7 @@ Bundle 'unite-font'
 Bundle 'unite-colorscheme'
 Bundle 'thinca/vim-quickrun'
 Bundle 'mattn/gist-vim'
-Bundle 'scrooloose/nerdcommenter'
+Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
@@ -114,10 +114,6 @@ let g:neocomplcache_min_syntax_length = 3
 " Gist.vimrc
 source ~/.vimrc.gist
 let g:gist_detect_filetype = 1
-
-" NERD Commenter.vim
-nnoremap <silent> <d-/> :call NERDComment(0, "toggle")<cr>
-vnoremap <silent> <d-/> <ESC>:call NERDComment(1, "toggle")<cr>
 
 " unite.vim
 "入力モードで開始する
