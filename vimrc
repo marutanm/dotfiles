@@ -18,8 +18,6 @@ Bundle 'unite-font'
 Bundle 'unite-colorscheme'
 Bundle 'thinca/vim-quickrun'
 Bundle 'mattn/gist-vim'
-Bundle 'msanders/cocoa.vim'
-Bundle 'msanders/snipmate.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
@@ -120,8 +118,6 @@ let g:gist_detect_filetype = 1
 " NERD Commenter.vim
 nnoremap <silent> <d-/> :call NERDComment(0, "toggle")<cr>
 vnoremap <silent> <d-/> <ESC>:call NERDComment(1, "toggle")<cr>
-
-"let g:filetype_m = 'objc'
 
 " unite.vim
 "入力モードで開始する
