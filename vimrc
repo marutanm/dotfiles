@@ -75,11 +75,25 @@ set ignorecase
 " 検索パターンに大文字が含まれる場合は大文字・小文字を区別する。
 set smartcase
 
+" folding 
+"set foldmethod=syntax
+"set foldmethod=indent
+
 " vimrcを即座に編集できるようにする
 nnoremap <Space>.  :<C-u>edit $MYVIMRC<Enter>
 
 " vimrcを即座にリロードできるようにする
 nnoremap <Space>s.  :<C-u>source $MYVIMRC<Enter>
+
+" hilight
+set hlsearch
+nnoremap <Esc><Esc> :nohlsearch<CR>
+
+" uset qq: and qq/ instead of q: or q/
+nnoremap qq: <Esc>q:
+nnoremap qq/ <Esc>q/
+nnoremap q: <Nop>
+nnoremap q/ <Nop>
 
 " ;と:の意味を入れ替える。文字として入力する場合はそのまま。
 noremap ;  :
