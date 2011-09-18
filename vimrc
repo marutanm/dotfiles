@@ -28,6 +28,7 @@ Bundle 'mrtazz/molokai.vim'
 Bundle 'ref.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'buftabs'
+Bundle 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
