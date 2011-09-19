@@ -155,3 +155,6 @@ nnoremap <C-h><C-h>  :<C-u>UniteWithCursorWord help<CR>
 
 " buftabs.vim
 let g:buftabs_only_basename=1
+
+" tcomment
+nnoremap <Leader>cc :<C-u>TComment<CR>
