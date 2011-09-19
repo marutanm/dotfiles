@@ -13,6 +13,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Shougo/neocomplcache'
 Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/vimproc'
 Bundle 'tsukkee/unite-help'
 Bundle 'unite-font'
 Bundle 'unite-colorscheme'
@@ -145,6 +146,8 @@ nnoremap <Space>s :<C-u>Unite line<CR>
 nnoremap <Space>us :<C-u>Unite line<CR>
 nnoremap <Space>/ :<C-u>Unite line<CR>
 nnoremap <Space>u/ :<C-u>Unite line<CR>
+nnoremap <Space>g :<C-u>Unite grep<CR>
+nnoremap <Space>ug :<C-u>Unite grep<CR>
 "ウィンドウを分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
 au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
