@@ -30,6 +30,7 @@ Bundle 'ref.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'buftabs'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'h1mesuke/unite-outline'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -148,6 +149,8 @@ nnoremap <Space>/ :<C-u>Unite line<CR>
 nnoremap <Space>u/ :<C-u>Unite line<CR>
 nnoremap <Space>g :<C-u>Unite grep<CR>
 nnoremap <Space>ug :<C-u>Unite grep<CR>
+nnoremap <Space>o :<C-u>Unite outline<CR>
+nnoremap <Space>uo :<C-u>Unite outline<CR>
 "ウィンドウを分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
 au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
