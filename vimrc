@@ -136,7 +136,15 @@ let g:gist_detect_filetype = 1
 let g:unite_enable_start_insert=1
 nnoremap <Space>u :<C-u>Unite file buffer file_mru<CR>
 nnoremap <Space>a :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
+nnoremap <Space>ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
 nnoremap <Space>r :<C-u>Unite ref/refe<CR>
+nnoremap <Space>ur :<C-u>Unite ref/refe<CR>
+nnoremap <Space>l :<C-u>Unite line<CR>
+nnoremap <Space>ul :<C-u>Unite line<CR>
+nnoremap <Space>s :<C-u>Unite line<CR>
+nnoremap <Space>us :<C-u>Unite line<CR>
+nnoremap <Space>/ :<C-u>Unite line<CR>
+nnoremap <Space>u/ :<C-u>Unite line<CR>
 "ウィンドウを分割して開く
 au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
 au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
