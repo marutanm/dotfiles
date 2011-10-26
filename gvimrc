@@ -11,7 +11,7 @@ if has('gui_macvim')
   set guioptions-=L
   "set guioptions-=t
   "set guioptions-=T
-  set guifont=Monaco:h14
+  set guifont=Inconsolata:h18
   set imdisable		" IMを無効化
 
   "フルスクリーンモード	
