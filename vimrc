@@ -31,6 +31,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'buftabs'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'h1mesuke/unite-outline'
+Bundle 'Indent-Guides'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -172,3 +173,8 @@ let g:buftabs_only_basename=1
 
 " tcomment
 nnoremap <Leader>cc :<C-u>TComment<CR>
+
+" indent-guides
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_color_change_percent = 10
+let g:indent_guides_guide_size = 1
