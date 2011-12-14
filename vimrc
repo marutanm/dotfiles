@@ -56,7 +56,7 @@ set ruler
 "set rulerformat=%20(%l,%c\ %P%)%=%{strftime('%k:%M')}
 set laststatus=2
 set statusline=
-set statusline+=%t\ %m%r%h%w
+set statusline+=%f\ %m%r%h%w
 set statusline+=[%Y][%{&fenc}]
 set statusline+=%{fugitive#statusline()}
 set statusline+=%=
