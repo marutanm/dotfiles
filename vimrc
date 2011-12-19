@@ -28,7 +28,6 @@ Bundle 'wombat256.vim'
 Bundle 'mrtazz/molokai.vim'
 Bundle 'ref.vim'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'buftabs'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'Indent-Guides'
@@ -138,8 +137,8 @@ let g:gist_detect_filetype = 1
 "入力モードで開始する
 let g:unite_enable_start_insert=1
 nnoremap <Space>u :<C-u>Unite file buffer file_mru<CR>
+nnoremap <Space>b :<C-u>Unite buffer <CR>
 nnoremap <Space>a :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
-" nnoremap <Space>ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
 nnoremap <Space>r :<C-u>Unite ref/refe<CR>
 " nnoremap <Space>ur :<C-u>Unite ref/refe<CR>
 nnoremap <Space>l :<C-u>Unite line<CR>
