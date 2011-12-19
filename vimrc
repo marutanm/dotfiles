@@ -167,9 +167,6 @@ nnoremap <C-h><C-h>  :<C-u>UniteWithCursorWord help<CR>
 " ref.vim
 " /usr/local/bin/refe
 
-" buftabs.vim
-let g:buftabs_only_basename=1
-
 " tcomment
 nnoremap <Leader>cc :<C-u>TComment<CR>
 
