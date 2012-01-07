@@ -31,6 +31,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'Indent-Guides'
+Bundle 'tangledhelix/vim-octopress'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -182,3 +183,6 @@ let g:EasyMotion_leader_key = '<Leader>'
 " fugitive
 cmap gs Gstatus
 cmap gd Gdiff
+
+" octopress
+autocmd BufNewFile,BufRead *.markdown setfiletype octopress
