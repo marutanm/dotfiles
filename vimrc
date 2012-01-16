@@ -181,8 +181,8 @@ let g:indent_guides_guide_size = 1
 let g:EasyMotion_leader_key = '<Leader>'
 
 " fugitive
-cmap gs Gstatus
-cmap gd Gdiff
+cmap gs<CR> Gstatus<CR>
+cmap gd<CR> Gdiff<CR>
 
 " octopress
 autocmd BufNewFile,BufRead *.markdown setfiletype octopress
