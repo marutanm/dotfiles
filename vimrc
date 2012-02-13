@@ -32,6 +32,7 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'h1mesuke/unite-outline'
 Bundle 'Indent-Guides'
 Bundle 'tangledhelix/vim-octopress'
+Bundle 'Syntastic'
 
 filetype plugin indent on     " required!
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
