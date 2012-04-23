@@ -155,11 +155,15 @@ nnoremap <Space>g :<C-u>Unite grep<CR>
 nnoremap <Space>o :<C-u>Unite outline<CR>
 " nnoremap <Space>uo :<C-u>Unite outline<CR>
 "ウィンドウを分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
-au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('split')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
+au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
+au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
 " ウィンドウを縦に分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
-au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('vsplit')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
+au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
+au FileType unite inoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
 
 " unite-help
 " Execute help.
