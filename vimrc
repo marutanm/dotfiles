@@ -163,7 +163,6 @@ au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('below
 au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
 au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
 au FileType unite nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
-au FileType unite inoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
 
 " unite-help
 " Execute help.
