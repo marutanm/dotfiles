@@ -43,6 +43,7 @@ filetype plugin indent on
 " ファイルの種類に応じたシンタックスハイライトを有効にする。
 syntax enable
 
+set t_Co=256
 set imdisable
 set showcmd			"コマンドをステータスラインに表示
 set number			"行番号を表示する
@@ -65,6 +66,7 @@ set statusline+=%<%c,%l\ %P\ %{strftime('%k:%M')}
 "set lines=50
 "set columns=150
 set cursorline
+highlight CursorLine term=reverse cterm=reverse
 "set cursorcolumn
 
 "行の連結 "J" で、間にスペースを入れない
