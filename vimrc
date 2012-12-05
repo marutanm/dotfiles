@@ -62,12 +62,45 @@ set statusline+=%f\ %m%r%h%w
 set statusline+=[%Y][%{&fenc}]
 set statusline+=%{fugitive#statusline()}
 set statusline+=%=
-set statusline+=%<%c,%l\ %P\ %{strftime('%k:%M')}
+set statusline+=%<%c,%l\ %P
 "set lines=50
 "set columns=150
 set cursorline
 highlight CursorLine term=reverse cterm=reverse
 "set cursorcolumn
+
+set showtabline=2
+set tabline=%!MyTabLine()
+function MyTabLine()
+  let s = ''
+  for i in range(tabpagenr('$'))
+    " select the highlighting
+    if i + 1 == tabpagenr()
+      let s .= '%#TabLineSel#'
+    else
+      let s .= '%#TabLine#'
+    endif
+
+    " set the tab page number (for mouse clicks)
+    let s .= '%' . (i + 1) . 'T'
+
+    " the label is made by MyTabLabel()
+    let s .= ' %{MyTabLabel(' . (i + 1) . ')} '
+  endfor
+
+  " after the last tab fill with TabLineFill and reset tab page nr
+  let s .= '%#TabLineFill#%T'
+
+  let s .= '%=' . fnamemodify(getcwd(), ":~")
+
+  return s
+endfunction
+
+function MyTabLabel(n)
+  let buflist = tabpagebuflist(a:n)
+  let winnr = tabpagewinnr(a:n)
+  return bufname(buflist[winnr - 1])
+endfunction
 
 "行の連結 "J" で、間にスペースを入れない
 set nojoinspaces
