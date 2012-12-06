@@ -3,37 +3,43 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vundle
-set nocompatible               " be iMproved
-filetype off                   " required!
+" NeoBundle
+set nocompatible
+filetype off
 
-set rtp+=~/.vim/bundle/vundle/ 
-call vundle#rc()
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+call neobundle#rc(expand('~/.vim/bundle/'))
 
-Bundle 'gmarik/vundle'
-Bundle 'Shougo/neocomplcache'
-Bundle 'Shougo/unite.vim'
-Bundle 'Shougo/vimproc'
-Bundle 'tsukkee/unite-help'
-Bundle 'unite-font'
-Bundle 'unite-colorscheme'
-Bundle 'thinca/vim-quickrun'
-Bundle 'tomtom/tcomment_vim'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'newspaper.vim'
-Bundle 'wombat256.vim'
-Bundle 'mrtazz/molokai.vim'
-Bundle 'ref.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'h1mesuke/unite-outline'
-Bundle 'Indent-Guides'
-Bundle 'tangledhelix/vim-octopress'
-Bundle 'Syntastic'
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'tsukkee/unite-help'
+NeoBundle 'unite-font'
+NeoBundle 'unite-colorscheme'
+NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'newspaper.vim'
+NeoBundle 'wombat256.vim'
+NeoBundle 'mrtazz/molokai.vim'
+NeoBundle 'ref.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'Indent-Guides'
+NeoBundle 'bbommarito/vim-slim'
+NeoBundle 'Syntastic'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'tangledhelix/vim-octopress'
+NeoBundle 'Syntastic'
 
-filetype plugin indent on     " required!
+filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " ファイル種類の自動判別とそれに応じた適切設定/インデントを行なう。
