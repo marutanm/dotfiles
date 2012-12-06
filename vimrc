@@ -142,6 +142,14 @@ noremap k  gk
 noremap gj  j
 noremap gk  k
 
+" tab
+nnoremap tn :<c-u>tabnext<cr>
+nnoremap t] :<c-u>tabnext<cr>
+nnoremap tt :<c-u>tabnext<cr>
+nnoremap tp :<c-u>tabprevious<cr>
+nnoremap t[ :<c-u>tabprevious<cr>
+nnoremap te :<c-u>tabedit<cr>
+
 "colorscheme torte
 "colorscheme wombat
 "colorscheme newspaper
