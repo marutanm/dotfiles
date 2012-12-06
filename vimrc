@@ -14,11 +14,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
-NeoBundle 'tsukkee/unite-help'
-NeoBundle 'unite-font'
-NeoBundle 'unite-colorscheme'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tpope/vim-haml'
@@ -30,7 +26,6 @@ NeoBundle 'mrtazz/molokai.vim'
 NeoBundle 'ref.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'h1mesuke/unite-outline'
 NeoBundle 'Indent-Guides'
 NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'Syntastic'
@@ -174,41 +169,6 @@ let g:molokai_original = 1
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
-
-" unite.vim
-"入力モードで開始する
-let g:unite_enable_start_insert=1
-nnoremap <Space>u :<C-u>Unite file buffer file_mru<CR>
-nnoremap <Space><Space> :<C-u>Unite file buffer file_mru<CR>
-nnoremap <Space>b :<C-u>Unite buffer <CR>
-nnoremap <Space>a :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
-nnoremap <Space>r :<C-u>Unite ref/refe<CR>
-" nnoremap <Space>ur :<C-u>Unite ref/refe<CR>
-nnoremap <Space>l :<C-u>Unite line<CR>
-" nnoremap <Space>ul :<C-u>Unite line<CR>
-nnoremap <Space>s :<C-u>Unite line<CR>
-" nnoremap <Space>us :<C-u>Unite line<CR>
-nnoremap <Space>/ :<C-u>Unite line<CR>
-" nnoremap <Space>u/ :<C-u>Unite line<CR>
-nnoremap <Space>g :<C-u>Unite grep<CR>
-" nnoremap <Space>ug :<C-u>Unite grep<CR>
-nnoremap <Space>o :<C-u>Unite outline<CR>
-" nnoremap <Space>uo :<C-u>Unite outline<CR>
-"ウィンドウを分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
-au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
-au FileType unite nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
-au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
-" ウィンドウを縦に分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
-au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
-au FileType unite nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
-
-" unite-help
-" Execute help.
-nnoremap <C-h>  :<C-u>Unite -start-insert help<CR>
-" Execute help by cursor keyword.
-nnoremap <C-h><C-h>  :<C-u>UniteWithCursorWord help<CR>
 
 " ref.vim
 " /usr/local/bin/refe
