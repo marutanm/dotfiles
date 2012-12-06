@@ -18,7 +18,6 @@ Bundle 'tsukkee/unite-help'
 Bundle 'unite-font'
 Bundle 'unite-colorscheme'
 Bundle 'thinca/vim-quickrun'
-Bundle 'mattn/gist-vim'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-surround'
@@ -165,10 +164,6 @@ let g:molokai_original = 1
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
-
-" Gist.vimrc
-source ~/.vimrc.gist
-let g:gist_detect_filetype = 1
 
 " unite.vim
 "入力モードで開始する
