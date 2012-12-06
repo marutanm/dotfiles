@@ -33,6 +33,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tangledhelix/vim-octopress'
 NeoBundle 'Syntastic'
+NeoBundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
