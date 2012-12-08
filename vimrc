@@ -153,15 +153,19 @@ let g:unite_enable_start_insert=1
 nnoremap <Space><Space> :<C-u>Unite file buffer file_mru<CR>
 nnoremap <Space>g :<C-u>Unite grep<CR>
 nnoremap <Space>/ :<C-u>Unite line<CR>
-"ウィンドウを分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
-au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
-au FileType unite nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
-au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
-" ウィンドウを縦に分割して開く
-au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
-au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
-au FileType unite nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
+
+autocmd FileType unite call s:unite_my_settings()
+function! s:unite_my_settings()
+  "ウィンドウを分割して開く
+  nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
+  inoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
+  nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
+  inoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
+  " ウィンドウを縦に分割して開く
+  nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
+  inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
+  nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
+endfunction
 
 " tcomment
 nnoremap <Leader>cc :<C-u>TComment<CR>
