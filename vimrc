@@ -14,16 +14,15 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplcache'
+NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'thinca/vim-quickrun'
-NeoBundle 'thinca/vim-ref'
 NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Indent-Guides'
 NeoBundle 'Syntastic'
-NeoBundle 'kien/ctrlp.vim'
 
 " specific
 NeoBundle 'tpope/vim-haml'
@@ -147,6 +146,25 @@ let g:molokai_original = 1
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
+
+" unite.vim
+"入力モードで開始する
+let g:unite_enable_start_insert=1
+nnoremap <Space><Space> :<C-u>Unite file buffer file_mru<CR>
+nnoremap <Space>g :<C-u>Unite grep<CR>
+nnoremap <Space>/ :<C-u>Unite line<CR>
+"ウィンドウを分割して開く
+au FileType unite nnoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
+au FileType unite inoremap <silent> <buffer> <expr> <C-k> unite#do_action('above')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
+au FileType unite inoremap <silent> <buffer> <expr> <C-j> unite#do_action('below')
+" ウィンドウを縦に分割して開く
+au FileType unite nnoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
+au FileType unite inoremap <silent> <buffer> <expr> <C-l> unite#do_action('right')
+au FileType unite nnoremap <silent> <buffer> <expr> <C-h> unite#do_action('left')
+
+" tcomment
+nnoremap <Leader>cc :<C-u>TComment<CR>
 
 " indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
