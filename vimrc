@@ -54,7 +54,6 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set ruler
-"set rulerformat=%20(%l,%c\ %P%)%=%{strftime('%k:%M')}
 set laststatus=2
 set statusline=
 set statusline+=%f\ %m%r%h%w
@@ -62,11 +61,8 @@ set statusline+=[%Y][%{&fenc}]
 set statusline+=%{fugitive#statusline()}
 set statusline+=%=
 set statusline+=%<%c,%l\ %P
-"set lines=50
-"set columns=150
 set cursorline
 highlight CursorLine term=reverse cterm=reverse
-"set cursorcolumn
 
 set showtabline=2
 set tabline=%!MyTabLine()
@@ -101,7 +97,6 @@ endfunction
 set nojoinspaces
 
 " 改行文字/インデント/インサートモード開始位置より前の文字を削除可能にする。
-"set backspace=eol,indent,start
 set backspace=indent,start
 
 " /{pattern}や?{pattern}による検索で大文字・小文字の違いを無視する。
@@ -109,10 +104,6 @@ set ignorecase
 
 " 検索パターンに大文字が含まれる場合は大文字・小文字を区別する。
 set smartcase
-
-" folding 
-"set foldmethod=syntax
-"set foldmethod=indent
 
 " vimrcを即座に編集できるようにする
 nnoremap <Space>.  :<C-u>edit $MYVIMRC<Enter>
@@ -150,11 +141,6 @@ nnoremap tp :<c-u>tabprevious<cr>
 nnoremap t[ :<c-u>tabprevious<cr>
 nnoremap te :<c-u>tabedit<cr>
 
-"colorscheme torte
-"colorscheme wombat
-"colorscheme newspaper
-colorscheme molokai
-
 " <Leader><Leader>で変更があれば保存
 noremap <Leader><Leader> :up<CR>
 
@@ -168,9 +154,6 @@ let g:molokai_original = 1
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
-
-" ref.vim
-" /usr/local/bin/refe
 
 " tcomment
 nnoremap <Leader>cc :<C-u>TComment<CR>
@@ -190,4 +173,6 @@ cmap gd<CR> Gdiff<CR>
 if filereadable(expand('~/.vim/vimrc.local'))
   source ~/.vim/vimrc.local
 endif
+
+colorscheme molokai
 
