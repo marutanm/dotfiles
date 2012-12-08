@@ -17,21 +17,21 @@ NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/vimproc'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'tomtom/tcomment_vim'
-NeoBundle 'tpope/vim-haml'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'newspaper.vim'
-NeoBundle 'wombat256.vim'
-NeoBundle 'mrtazz/molokai.vim'
 NeoBundle 'ref.vim'
-NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Indent-Guides'
-NeoBundle 'bbommarito/vim-slim'
 NeoBundle 'Syntastic'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'tpope/vim-rails'
 NeoBundle 'kien/ctrlp.vim'
+
+" specific
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'bbommarito/vim-slim'
+NeoBundle 'kchmck/vim-coffee-script'
+
+" colorscheme
+NeoBundle 'mrtazz/molokai.vim'
 
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
