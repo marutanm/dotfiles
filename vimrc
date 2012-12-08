@@ -114,12 +114,6 @@ nnoremap <Space>s.  :<C-u>source $MYVIMRC<Enter>
 set hlsearch
 nnoremap <Esc><Esc> :nohlsearch<CR>
 
-" uset qq: and qq/ instead of q: or q/
-nnoremap qq: <Esc>q:
-nnoremap qq/ <Esc>q/
-nnoremap q: <Nop>
-nnoremap q/ <Nop>
-
 " ;と:の意味を入れ替える。文字として入力する場合はそのまま。
 noremap ;  :
 noremap :  ;
@@ -154,12 +148,8 @@ let g:molokai_original = 1
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
 
-" tcomment
-nnoremap <Leader>cc :<C-u>TComment<CR>
-
 " indent-guides
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_color_change_percent = 10
 let g:indent_guides_guide_size = 1
 
 " EasyMotion
