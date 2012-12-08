@@ -58,7 +58,6 @@ set laststatus=2
 set statusline=
 set statusline+=%f\ %m%r%h%w
 set statusline+=[%Y][%{&fenc}]
-set statusline+=%{fugitive#statusline()}
 set statusline+=%=
 set statusline+=%<%c,%l\ %P
 set cursorline
@@ -79,7 +78,7 @@ function! MyTabLine()
     let s .= ' %{MyTabLabel(' . (i + 1) . ')} '
   endfor
   let s .= '%#TabLineFill#%T'
-  let s .= '%=' . fnamemodify(getcwd(), ":~")
+  let s .= '%=%{fugitive#statusline()} ' . fnamemodify(getcwd(), ":~")
   return s
 endfunction
 
