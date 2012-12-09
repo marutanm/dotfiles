@@ -23,6 +23,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Indent-Guides'
 NeoBundle 'Syntastic'
+NeoBundle 'Align'
 
 " specific
 NeoBundle 'tpope/vim-haml'
