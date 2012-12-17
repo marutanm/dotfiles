@@ -152,7 +152,7 @@ let g:neocomplcache_min_syntax_length = 3
 "入力モードで開始する
 let g:unite_enable_start_insert=1
 nnoremap <Space><Space> :<C-u>Unite file buffer file_mru<CR>
-nnoremap <Space>g :<C-u>Unite grep<CR>
+nnoremap <Space>g :<C-u>Unite vimgrep<CR>
 nnoremap <Space>/ :<C-u>Unite line<CR>
 
 autocmd FileType unite call s:unite_my_settings()
