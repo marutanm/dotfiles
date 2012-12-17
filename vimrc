@@ -24,6 +24,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'Indent-Guides'
 NeoBundle 'Syntastic'
 NeoBundle 'Align'
+NeoBundle 'gregsexton/gitv'
 
 " specific
 NeoBundle 'tpope/vim-haml'
