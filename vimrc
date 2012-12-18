@@ -25,6 +25,7 @@ NeoBundle 'Indent-Guides'
 NeoBundle 'Syntastic'
 NeoBundle 'Align'
 NeoBundle 'gregsexton/gitv'
+NeoBundle 'glidenote/memolist.vim'
 
 " specific
 NeoBundle 'tpope/vim-haml'
@@ -182,6 +183,11 @@ let g:EasyMotion_leader_key = 'f'
 " fugitive
 cmap gs<CR> Gstatus<CR>
 cmap gd<CR> Gdiff<CR>
+
+" memolist
+let g:memolist_path = "~/Dropbox/memo"
+nnoremap mn  :MemoNew<CR>
+nnoremap mf  :FufFile <C-r>=expand(g:memolist_path."/")<CR><CR>
 
 if filereadable(expand('~/.vim/vimrc.local'))
   source ~/.vim/vimrc.local
