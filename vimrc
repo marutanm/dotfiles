@@ -153,6 +153,7 @@ let g:neocomplcache_min_syntax_length = 3
 " unite.vim
 "入力モードで開始する
 let g:unite_enable_start_insert=1
+let g:unite_data_directory='~/.vim/unite'
 nnoremap <Space><Space> :<C-u>Unite file buffer file_mru<CR>
 nnoremap <Space>g :<C-u>Unite vimgrep<CR>
 nnoremap <Space>/ :<C-u>Unite line<CR>
