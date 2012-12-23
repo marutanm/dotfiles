@@ -1,0 +1,15 @@
+[alias]
+	ci = commit
+	br = branch
+	st = status
+	co = checkout
+[user]
+	name = marutanm
+	email = marutanm@gmail.com
+[core]
+	editor = /usr/bin/vim
+	excludesfile = ~/.git/excludefile
+[color]
+	ui = auto
+[mergetool]
+	keepBackup = true
