@@ -2,3 +2,5 @@ bundle/*
 .netrwhist
 vimrc.local
 autoload
+unite
+neocon
