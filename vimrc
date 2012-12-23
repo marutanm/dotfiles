@@ -149,6 +149,7 @@ let g:molokai_original = 1
 " neocomplcache.vim
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_temporary_dir='~/.vim/neocon'
 
 " unite.vim
 "入力モードで開始する

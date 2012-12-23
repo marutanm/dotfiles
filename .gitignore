@@ -3,3 +3,4 @@ bundle/*
 vimrc.local
 autoload
 unite
+neocon
