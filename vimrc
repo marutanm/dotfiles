@@ -26,6 +26,7 @@ NeoBundle 'Syntastic'
 NeoBundle 'Align'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'glidenote/memolist.vim'
+NeoBundle 'goldfeld/vim-seek'
 
 " specific
 NeoBundle 'tpope/vim-haml'
