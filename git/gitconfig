@@ -3,6 +3,7 @@
 	br = branch
 	st = status
 	co = checkout
+	gr = log --graph --pretty=format:'%s%n%C(magenta bold)%h%Creset %C(yellow)%d %Cblue[%ai] %Cgreen<%an>%Creset'
 [user]
 	name = marutanm
 	email = marutanm@gmail.com
@@ -13,3 +14,5 @@
 	ui = auto
 [mergetool]
 	keepBackup = true
+[merge]
+	ff = false
