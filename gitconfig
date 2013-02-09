@@ -13,3 +13,5 @@
 	ui = auto
 [mergetool]
 	keepBackup = true
+[merge]
+	ff = false
